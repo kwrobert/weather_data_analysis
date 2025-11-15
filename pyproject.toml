@@ -4,22 +4,17 @@ version = "0.1.0"
 description = "Weather data analysis project"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
-
-[project.optional-dependencies]
-dev = [
-    "pytest>=8.0.0",
-    "pytest-cov>=4.1.0",
-    "ruff>=0.6.0",
-    "mypy>=1.11.0",
+dependencies = [
+    "xarray[complete]>=2025.10.1",
 ]
+
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "pytest>=8.0.0",
     "pytest-cov>=4.1.0",
     "ruff>=0.6.0",
