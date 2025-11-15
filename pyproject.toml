@@ -21,6 +21,9 @@ dev = [
     "ruff>=0.6.0",
     "mypy>=1.11.0",
 ]
+jupyter-extensions = [
+    "jupyterlab-vim>=4.1.4",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
