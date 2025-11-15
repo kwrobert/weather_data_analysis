@@ -5,6 +5,7 @@ description = "Weather data analysis project"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "jupyterlab>=4.4.10",
     "xarray[complete]>=2025.10.1",
 ]
 
